@@ -28,9 +28,9 @@ function playSound(num) {
     var audio = new Audio();
 
     if (num == 0) {
-        audio.src = "attackSound.ogg";
-    } else {
         audio.src = "playSound.ogg";
+    } else {
+        audio.src = "attackSound.ogg";
     }
     audio.volume = 0.2;
     audio.play();
