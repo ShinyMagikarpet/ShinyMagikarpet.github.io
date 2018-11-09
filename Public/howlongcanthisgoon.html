@@ -2,10 +2,47 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
 </head>
-<body>
-    a long time
+
+<body class="bg" onclick="spawnImg('knifejuggler.png', 'knifejugglerGold.png', event)" id="mainBody">
+
+    <script src="functions2.js"> </script>
+
+    <div class="wrapper">
+        <img src="apprentice.png" hidden />
+        <img src="apprenticeGold.png" hidden />
+    </div>
+
+
 </body>
 </html>
+
+
+<style>
+    body, html {
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+    }
+
+    .bg {
+        background-image: url(classicBackground.jpg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .wrapper {
+        text-align: center;
+    }
+
+    .overlays {
+        height: 40px;
+        width: 90px;
+        position: absolute;
+        top: 50%;
+    }
+</style>
