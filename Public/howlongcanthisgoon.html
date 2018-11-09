@@ -6,6 +6,17 @@
     <title></title>
 </head>
 <body>
-    a long time
+    <iframe src="silence.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+    <audio src="Trumpets.mp3" autoplay="autoplay" id="theme"></audio>
 </body>
 </html>
+
+<script>
+    window.onload = function(){
+
+        var audio = new Audio();
+        audio = document.getElementById("theme");
+        audio.volume = 0.7;
+
+    }
+</script>
